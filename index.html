@@ -1,0 +1,151 @@
+
+<idoctype html>
+
+<head>
+<meta charset = "utf-8">
+<link href='normalize.css' rel="stylesheet">
+<link href='https://spoqa.github.io/spoqa-han-sans/…/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
+
+<style>
+<style type = style.css">
+html { font-family: 'Spoqa Han Sans'; font-weight: 200;}
+.section{height:600px;width:100%;position: relative}
+header{height:700px; background:white; width:100%; transition: all 0.5s}
+header #logo{width:200px;text-align: center;height:44px;line-height: 44px;font-size: 1.5em;font-weight: 700;position:relative;left:calc(50% - 100px);transition: all 0.3s;color:white}
+header #menu{width:700px;height:100px;position:relative;left:calc(50% - 350px);top:100px;transition: all 0.3s}
+header li{width:50px;height:50px;color:black;background: white;float:left;border-radius: 10px;text-align: center;line-height: 50px;color:black;font-size: 2em;margin-left: 60px;margin-right:20px;}
+h1{color:white;font-size: 3em;text-align: center;padding-top:280px; line-height: 1.2;padding-left: 100px;padding-right: 100px;letter-spacing: -1px;}
+h2{color:black;font-size: 2em;text-align: center;padding-top:280px; line-height: 1.2;padding-left: 100px;padding-right: 100px;letter-spacing: -1px;}
+#sectionA{ background: gray; transition: all 1s; }
+#sectionB{ background: gray; transition: all 1s; }
+#sectionC{ background: url('image.png');background-size:100% auto;background-position: 0px -120px; }
+#sectionD{ background: gray; transition: all 1s; }
+#sectionE{ background: gray; transition: all 1s; }
+#titleA{transition: all 1s;}
+#titleB{transition: all 1s;}
+#titleC{transition: all 1s;}
+#titleD{transition: all 1s;}
+#titleE{transition: all 1s;}
+</style>
+</head>
+
+<body>
+
+<audio src="song.mp3" controlsl autoplay>
+</audio>
+<header id="header">
+<div id="logo">연서복</div>
+<div id="menu">
+<ul>
+<li id="menuA">★</li>
+<li id="menuB">★</li>
+<li id="menuC">★</li>
+<li id="menuD">★</li>
+<li id="menuE">★</li>
+</ul>
+</div>
+</header>
+<div class="section" id="sectionA">
+<h1 id="titleA">♥ 연서복 ♥</h1>
+</div>
+<div class="section" id="sectionB">
+<h1 id="titleB">연애에 서툰 복학생 시뮬레이션 게임</h1>
+</div>
+<div class="section" id="sectionC">
+<h2 id="titleC">이번에 복학한 그는 과연 연애에 성공할 수 있을까?</h1>
+</div>
+<div class="section" id="sectionD">
+<h1 id="titleD">여러분의 센스있는 초이스를 믿습니다.</h1>
+</div>
+<div class="section" id="sectionE">
+<h1 id="titleE">2017년 하반기 오픈</h1>
+</div>
+<div class="section">
+<h1 style="color:black">연애에 서툰 복.학.생</h1>
+</div>
+
+<script>
+window.onscroll = function(){
+console.log(document.body.scrollTop);
+var scrollH = document.body.scrollTop;
+if(scrollH > 50){
+header.style.height = "100px";
+header.style.position = "fixed";
+header.style.top = "0px";
+header.style.zIndex = "9999";
+menu.style.left = "400px";
+menu.style.top = "-30px";
+logo.style.left = "0px";
+sectionA.style.marginTop = "44px";
+titleA.style.fontSize = "5em";
+}else{
+header.style.height = "300px";
+header.style.position = "relative";
+header.style.top = "0px";
+logo.style.left = "calc(50% - 100px)";
+menu.style.left = "calc(50% - 350px)";
+menu.style.top = "200px";
+sectionA.style.marginTop = "0px";
+sectionA.style.background = "pink";
+}
+if(scrollH > 280){
+titleA.style.paddingTop = "500px";
+menuA.style.background = "red";
+sectionA.style.background = "gray";
+titleE.style.fontSize = "2em";
+}else{
+titleA.style.paddingTop = "280px";
+menuA.style.background = "white";
+}
+if(scrollH > 400){
+titleB.style.paddingTop = "500px";
+titleB.style.transform = "rotateY(180deg)";
+menuB.style.background = "orange";
+sectionB.style.background = "red";
+}else{
+titleB.style.paddingTop = "280px";
+titleB.style.transform = "rotateY(0deg)";
+menuB.style.background = "white";
+sectionB.style.background = "gray";
+
+}
+if(scrollH > 1000){
+sectionC.style.backgroundAttachment = "scroll";
+menuC.style.background = "yellow";
+sectionB.style.background = "gray";
+}else{
+sectionC.style.backgroundAttachment = "fixed";
+menuC.style.background = "white";
+
+}
+if(scrollH > 1643){
+sectionD.style.background = "green";
+titleD.style.color = "black";
+titleD.style.transform = "rotateY(360deg)"
+menuD.style.background = "green";
+}else{
+sectionD.style.background = "gray";
+titleD.style.color = "white";
+menuD.style.background = "white";
+sectionD.style.background = "gray";
+}
+if(scrollH > 2189){
+titleE.style.fontSize = "5em";
+titleE.style.fontWeight = "700";
+menuE.style.background = "blue";
+sectionE.style.background = "blue";
+sectionD.style.background = "gray";
+}else{
+titleE.style.fontSize = "2em";
+titleE.style.fontWeight = "200";
+menuE.style.background = "white";
+sectionE.style.background = "gray";
+}
+if(scrollH > 2609){
+sectionE.style.background = "gray";
+}else{
+
+}
+}
+</script>
+</body>
